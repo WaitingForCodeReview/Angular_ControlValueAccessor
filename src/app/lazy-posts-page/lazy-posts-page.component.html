@@ -1,0 +1,15 @@
+<div class="posts-container">
+  <form [formGroup]="form">
+    <div formArrayName="posts">
+
+      <h1>Posts</h1>
+      <div *ngFor="let control of controls" class="post" [ngClass]="{ invalidFormat: isInvalid() }">
+        <app-lazy-post
+          [formControl]="control"
+          (change)="postChanged()"
+        ></app-lazy-post>
+      </div>
+
+    </div>
+  </form>
+</div>

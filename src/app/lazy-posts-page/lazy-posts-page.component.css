@@ -1,0 +1,19 @@
+.posts-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 3%;
+}
+.posts-container form {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.post {
+  margin-top: 20%;
+}
+.invalidFormat{
+  border: 2px solid red;
+}

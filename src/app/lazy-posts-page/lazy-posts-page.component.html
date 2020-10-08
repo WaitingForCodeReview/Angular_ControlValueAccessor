@@ -3,7 +3,7 @@
     <div formArrayName="posts">
 
       <h1>Posts</h1>
-      <div *ngFor="let control of controls" class="post" [ngClass]="{ invalidFormat: isInvalid() }">
+      <div *ngFor="let control of controls" class="post" [class.invalidFormat]="form.invalid">
         <app-lazy-post
           [formControl]="control"
           (change)="postChanged()"
